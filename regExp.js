@@ -28,4 +28,5 @@ console.log(birthDate.test("26-03-1998 12:00"));
 //to check repeating parts of a pattern
 console.log(/'\d+'/.test("'123'")); //string should have some digits whether repeatng or non repeating
 
+console.log(/'\d*'/.test("'1'"));
 
