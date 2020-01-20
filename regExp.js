@@ -27,6 +27,20 @@ console.log(birthDate.test("26-03-1998 12:00"));
 
 //to check repeating parts of a pattern
 console.log(/'\d+'/.test("'123'")); //string should have some digits whether repeatng or non repeating
+console.log(/'\d*'/.test("'1'"));  //string can have 0 or more digits
 
-console.log(/'\d*'/.test("'1'"));
+let ss = /unfortun?ately/;
+console.log(ss.test("unfortuately")); // n can occur or not it will print true.
+
+
+//{1,2} - minimum digits 1 and maximum digits 2
+//{5,} - five or more times
+let limit1 = /\d{1,2}-\d{1,2}-\d{4} \d{1,2}-\d{2}/ ;
+console.log(limit1.test("1-12-2020 11-30"));
+
+
+//returns the digit in the statement.
+let trst = /\d+/.exec("give the 1000");
+console.log(trst);
+
 
