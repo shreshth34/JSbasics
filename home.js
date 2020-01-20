@@ -7,5 +7,6 @@ var JS1 = {
     topic3: "Functions",
     topic4: "Higher order functions",
     topic5: "regex"
+    
 }
 
