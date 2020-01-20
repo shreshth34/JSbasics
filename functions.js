@@ -13,7 +13,7 @@ repeat(5, (i) => {
     labels.push(`Unit ${i+1}`);
 
 });
-console.log(labels)
+console.log(labels);
 
 greaterThan = (n) =>{
 
@@ -37,11 +37,11 @@ const companies = [
 
 ];
 
-const ages = [22,34,24,55,64,54,45,97,33,29,5,45,53,67,89,25]; 
+const ages = [22,34,24,55,64,36,54,45,97,33,29,5,45,53,67,89,25]; 
 
-companies.forEach(function(company){
+companies.forEach(function(e){
 
-    console.log(company.category);
+    console.log(e.category);
 
 });
 
@@ -63,10 +63,28 @@ const finance1 = companies.filter(e => e.category == "finance");
 console.log(finance1);
 
 printSome = (n) => {
-
 return m => m+" "+n;
-
 }
 
 const jump = printSome("cool");
 console.log(jump("something"));
+
+
+
+//create array of company names
+
+const ageSquare = ages.map(age => Math.sqrt(age));
+console.log(ageSquare);
+
+//const ages = [22,34,24,55,64,36,54,45,97,33,29,5,45,53,67,89,25]; 
+
+const ageSort = ages.sort((a,b)=> a<b ? -1 : 1);
+console.log(ageSort);
+
+const addAge = ages.reduce((total,e) => total+e,0) ;
+console.log(addAge);
+
+
+list1 = [1,2,2,3,4,2,3,4,6,7,8,8,8,7,4,5];
+
+console.log([...new Set(list1)]);
