@@ -40,7 +40,10 @@ console.log(trst);
 
 //check if string can have a numbe rthen pig or cow or chicken in lural or singular
 let animalCount = /\b\d+ (pig|cow|chicken)s?\b/;
-console.log(animalCount.test('23 cows'));
+console.log(animalCount.test('23 cows $'));
+
+var ptr = /\b\d*\D\d*(@)\D(.com)\b/;
+console.log(ptr.test("2d2@f.com"));
 
 
 

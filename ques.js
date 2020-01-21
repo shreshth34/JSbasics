@@ -17,4 +17,8 @@ p = new Set(x);
 t = [...p];
 console.log(t); //prints another array without duplicate values
 
+"l".toUpperCase();
+
+var str = "rapp";
+console.log(str.replace("str[0]", str.toUpperCase(str[0])));
 
